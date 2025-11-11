@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eduardo Garage</title>
+</head>
+<body>
+    <div id="parte-superior">
+            <h1>Eduardo Garage Estética Automotiva</h1>
+            <h2>O Spa da sua nave!</h2>
+            <p>A Eduardo Garage é uma estética automotiva focada não apenas em deixar seu veículo na melhor forma que ja teve, como também em trabalhar com amor ao seu carro, sentindo como se ele fizesse parte da nossa garagem.</p>
+            <p>Com serviço personalizado para cada veículo, nós vamos deixar sua nave brilhando!</p>
+    </div>
+    <div id="servicos">
+        <h2>Nossos serviços</h2>
+        <ul>
+            <strong><li>Lavagem completa</li></strong> <!-- strong faz parte de boas praticas. eu poderia usar a tag b neste exemplo, que tambem funcionaria-->
+            <li>Polimento e cristalização</li>
+            <li>Higienização interna</li>
+            <li>Vitrificação de pintura</li>
+            <li>Revitalização de faróis</li>
+            <li>Proteção cerâmica</li>
+        </ul>
+    </div>
+
+    <div id="portfolio">
+        <h2>Nosso portfólio</h2>
+        <p>Aqui estão alguns exemplos do nosso trabalho:</p>
+        <img title="Chevrolet Corsa" src="imagens\Imagem do WhatsApp de 2025-11-05 à(s) 12.09.46_e33c7969.jpg" width="400" height="auto"/>
+
+    </div>
+
+
+
+
+
+
+    <!-- a tag span cria uma div mas nao separa na tela. serve apenas caso vc queira fazer um css para uma parte especifica do texto. nao vira um block -->
+    <fieldset>
+        <legend>Entre em contato e agende o spa do seu carro!</legend>
+        <div id="formumario-de-contato">
+            <form name="formulario-de-cadastro" onsubmit="alert('Sua nave agradece');" autocomplete="off" target="_blank" 
+                method="post" action="#">
+                <label>Nome:</label> <input type="text" name="name" /><br><br>
+                <label>Email:</label> <input type="email" name="email" /><br><br>
+                <label>Marca e modelo do veículo:</label> <input type="text" name="vehicle_model" /><br><br>
+                <label>Ano do veículo:</label> <input type="number" min="1950" max="2027" name="vehicle_year" /><br><br>
+                <label>Cor do veículo: </label><input type="color" name="vehicle_color" /><br><br>
+                <label>O que está ofuscando a beleza do seu carro?</label> 
+                <textarea type="text" name="message"></textarea> <br><br>
+                <label>Melhor data de agendamento: </label> <input type="date" name="appointment_date" /><br><br>
+                <button type="reset">Limpar</button>
+                <button type="submit">Pronto!</button>
+            </form>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Nossa localização</legend>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.9355109345875!2d-46.57312242388872!3d-23.53482177881805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5ee63da5e767%3A0x40a57e2789211612!2sR.%20Baguari%2C%2079%20-%20Tatuap%C3%A9%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2003084-040!5e0!3m2!1spt-BR!2sbr!4v1762351984531!5m2!1spt-BR!2sbr" width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
+       
+</body>
+</html>
+
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        background-color: #f4f4f4;
+    }
+
+    #parte-superior {
+        background-color: #333;
+        color: white;
+        padding: 20px;
+        text-align: left;
+    }
+
+    h1 {
+        margin: 0;
+    }
+
+    #servicos {
+        margin-top: 20px;
+    }
+
+    ul {
+        list-style-type: square;
+    }
+
+    fieldset {
+        margin-top: 20px;
+        padding: 10px;
+        border: 2px solid #ccc;
+    }
+
+    legend {
+        font-weight: bold;
+    }
+
+    label {
+        display: inline-block;
+        width: 200px;
+        margin-bottom: 10px;
+    }
+
+    input, textarea {
+        width: 300px;
+        padding: 5px;
+        margin-bottom: 10px;
+    }
+
+    button {
+        padding: 10px 15px;
+        margin-right: 10px;
+        background-color: #333;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #555;
+    }
+</style>
+
+<!-- w3schools.com/tags/ref_colornames.asp -->
