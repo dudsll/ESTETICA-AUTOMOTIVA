@@ -1,10 +1,9 @@
-/* style.css */
 .header{
     background-color: gray;
     text-align: center;
     padding: 20px;
     font-family: Arial, sans-serif;
-    color: white;s
+    color: white;
 }
 
 .servicos{
@@ -23,7 +22,7 @@
 .portfolio{
     text-align: left;
     margin: 20px;
-    border: 5px solid
+    border: 5px solid;
     padding: 20px;
     border-radius: 5px;
     border-color: black;
