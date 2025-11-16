@@ -1,62 +1,41 @@
 /* style.css */
-    body {
-        font-family: Arial, sans-serif;
-        margin: 20px;
-        background-color: #f4f4f4;
-    }
+.header{
+    background-color: gray;
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: white;s
+}
 
-    #parte-superior {
-        background-color: #333;
-        color: white;
-        padding: 20px;
-        text-align: left;
-    }
+.servicos{
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+}
 
-    h1 {
-        margin: 0;
-    }
+.lista-servicos{
+    list-style-type: square;
+    padding-left: 20px;
+    font-family: Arial, sans-serif;
+}
 
-    #servicos {
-        margin-top: 20px;
-    }
+.portfolio{
+    text-align: left;
+    margin: 20px;
+    border: 5px solid
+    padding: 20px;
+    border-radius: 5px;
+    border-color: black;
+    border-style: solid;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+}
 
-    ul {
-        list-style-type: square;
-    }
-
-    fieldset {
-        margin-top: 20px;
-        padding: 10px;
-        border: 2px solid #ccc;
-    }
-
-    legend {
-        font-weight: bold;
-    }
-
-    label {
-        display: inline-block;
-        width: 200px;
-        margin-bottom: 10px;
-    }
-
-    input, textarea {
-        width: 300px;
-        padding: 5px;
-        margin-bottom: 10px;
-    }
-
-    button {
-        padding: 10px 15px;
-        margin-right: 10px;
-        background-color: #333;
-        color: white;
-        border: none;
-        cursor: pointer;
-    }
-
-    button:hover {
-        background-color: #555;
-    }
-
+.local{
+    margin: 20px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
 /* w3schools.com/tags/ref_colornames.asp -->*/ 
