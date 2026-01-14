@@ -1,40 +1,101 @@
+body{
+    background-color: black;
+    font-family: Arial, sans-serif;
+    color: white;
+    background-image: url("imagens/background.jpg");
+}
+
 .header{
-    background-color: gray;
     text-align: center;
     padding: 20px;
     font-family: Arial, sans-serif;
     color: white;
 }
+header h1{
+    font-size: 36px;
+    margin: 0;
+    font-style: italic;
+    text-align: center;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+header div{
+    text-align: center;
+}
 
 .servicos{
     margin: 20px;
     padding: 20px;
-    background-color: #f9f9f9;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
     font-family: Arial, sans-serif;
+    color: white;
+    font-style: italic;
 }
 
 .lista-servicos{
     list-style-type: square;
-    padding-left: 20px;
+    padding: 20px 20px 20px 40px;
     font-family: Arial, sans-serif;
+    border: 1px solid;
+    border-color: red;
+    border-radius: 20px;
+    margin: auto;
+    font-style: italic;
 }
 
 .portfolio{
     text-align: left;
+    font-style: italic;
     margin: 20px;
-    border: 5px solid;
+    border: 1px solid;
     padding: 20px;
-    border-radius: 5px;
-    border-color: black;
+    border-radius: 20px;
+    border-color: red;
     border-style: solid;
-    background-color: #f9f9f9;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
     font-family: Arial, sans-serif;
 }
+.portfolio img{
+    border-radius: 20px;
+}
+
 
 .local{
     margin: 20px;
     padding: 20px;
-    background-color: #f0f0f0;
+    background-color: rgba(0, 0, 0, 0.5);
     font-family: Arial, sans-serif;
+    color: white;
+    border-color: darkred;
+    border-radius: 20px;
+    font-style: italic;
+    iframe {
+        border-radius: 20px;
+    }
+}
+
+form{
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-family: Arial, sans-serif;
+    color: white;
+    border-color: darkred;
+    border-radius: 20px;
+    font-style: italic;
+}
+
+.formulario-contato{
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-family: Arial, sans-serif;
+    color: white;
+    border-color: darkred;
+    border-radius: 20px;
+    font-style: italic;
 }
 /* w3schools.com/tags/ref_colornames.asp -->*/ 
