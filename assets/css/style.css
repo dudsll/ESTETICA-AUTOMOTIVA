@@ -73,9 +73,10 @@ form{
     cursor: pointer;
 }
 
-.lista-servicos img{
+.imagem-servico{
     border-radius: 20px;
     justify-content: center;
+    width: 100%;
 }
 
 .portfolio{
