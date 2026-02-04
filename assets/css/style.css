@@ -36,6 +36,25 @@ form{
     width: 50%;
     display: flex;
     flex-direction: row;
+    width: ;
+}
+
+.lista-servicos{
+    list-style-type: square;
+    padding: 20px 20px 20px 40px;
+    border: 1px solid red;
+    border-radius: 20px;
+    /* margin: auto; */
+    /* height: 100%; */
+}
+
+.imagem-servico{
+    margin: 20px;
+    border-radius: 20px;
+    justify-content: center;
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .local{
@@ -50,34 +69,20 @@ form{
     border-radius: 20px;
 }
 
-.lista-servicos{
-    list-style-type: square;
-    padding: 20px 20px 20px 40px;
-    border: 1px solid red;
-    border-radius: 20px;
-    /* margin: auto; */
-    /* height: 100%; */
-}
 
-.lista-servicos button{
-
+.button{
     /* estou pensando se faco uma classe para todos os botoes, ouse se tenho que deixar sepadado por causa dos de cima */
     border-radius: 10px; 
     padding: 10px;
     margin: 5px;
     width: 80%;
-    background-color: rgba(255, 0, 0, 0.7);
+    background-color: rgba(114, 3, 3, 0.5);
     color: white;
     font-weight: bold;
     border: none;
     cursor: pointer;
 }
 
-.imagem-servico{
-    border-radius: 20px;
-    justify-content: center;
-    width: 100%;
-}
 
 .portfolio{
     text-align: left;
