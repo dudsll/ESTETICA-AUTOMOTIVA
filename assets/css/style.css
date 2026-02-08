@@ -18,6 +18,7 @@ form{
     margin: 20px;
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid;
     border-color: red;
     border-radius: 20px;
 }
@@ -120,6 +121,7 @@ button:hover{
 }
 
 .conteudo-footer{
+    margin: auto;
 }
 /* } perguntar para o leo qual dessas classes é desnecessaria */
 
