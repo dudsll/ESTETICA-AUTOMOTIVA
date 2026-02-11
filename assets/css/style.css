@@ -1,4 +1,6 @@
 body{
+    margin: 0;
+    padding: 0;
     background-image: url("../imgs/background.jpg");
     background-color: black;
     font-family: Arial, sans-serif;
@@ -104,9 +106,7 @@ button:hover{
 }
 
 .conteudo{
-    /* display: flex; */
-    width: 100%;
-
+    ;
 }
 
 .footer {
@@ -157,7 +157,6 @@ button:hover{
     position: relative;
 }
 
-
 .botoes-carrossel{
     display: flex;
     flex-direction: row;
@@ -165,11 +164,10 @@ button:hover{
 }
 
 .carrossel{
-    width: 100%;
-    max-width: 600px;
-    height: 400px;
-    overflow: hidden;
-    position: relative;
+    width: 100vw;
+    height: 60vh;
+    min-height: 300px;
+    max-height: 500px;
 }
 
 .slides{
