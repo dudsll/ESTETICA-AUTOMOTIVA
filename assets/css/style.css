@@ -151,7 +151,6 @@ button:hover{
 }
 
 .carrossel{
-    display: flex;
     max-width: 600px;
     overflow: hidden;
     position: relative;
@@ -164,19 +163,14 @@ button:hover{
 }
 
 .slides{
-    display: flex;
     transition: opacity 0.5s ease-in-out;
 }   
 
 .slides img{
     display: none;
-    margin: 20px;
     border-radius: 20px;
-    justify-content: center;
+    width: 100%;
     object-fit: cover;
-    object-position: center;
-    width: 300px;
-    height: 400px;  
 }
 
 .slides img.active {
