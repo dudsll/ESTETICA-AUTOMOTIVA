@@ -40,7 +40,7 @@ form{
 }
 
 .lista-servicos{
-    list-style-type: square;
+    list-style-type: none;
     padding: 20px 20px 20px 40px;
     border: 1px solid red;
     border-radius: 20px;
@@ -130,4 +130,21 @@ button:hover{
     margin: 0 10px;
     justify-content: center;
     align-items: right;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* background: linear-gradient(135deg, #e0e0e0 0%, #cfcfcf 50%, #a0a0a0 100%); */
+}
+
+.logo img{
+    width:300px;
+    height: auto;
+    margin: 0 10px;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: left;
 }

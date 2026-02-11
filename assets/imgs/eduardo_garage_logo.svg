@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 300">
+  <defs>
+    <linearGradient id="gradRed" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff4d4d;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#cc0000;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#800000;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="gradGrey" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f2f2f2;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#808080;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#404040;stop-opacity:1" />
+    </linearGradient>
+    <filter id="dropShadow">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3" />
+      <feOffset dx="2" dy="2" result="offsetblur" />
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.5" />
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <path d="M250 20 L400 60 L380 200 Q250 280 120 200 L100 60 Z" 
+        fill="#333" stroke="url(#gradGrey)" stroke-width="5" filter="url(#dropShadow)"/>
+
+  <path d="M160 140 Q180 100 250 100 Q320 100 340 140 L360 150 L140 150 Z" 
+        fill="url(#gradRed)" />
+  
+  <circle cx="190" cy="150" r="15" fill="#1a1a1a" stroke="#fff" stroke-width="2"/>
+  <circle cx="310" cy="150" r="15" fill="#1a1a1a" stroke="#fff" stroke-width="2"/>
+
+  <g transform="translate(250, 90) rotate(45) scale(0.6)">
+    <path d="M-10 -40 L-10 40 L10 40 L10 -40 Z" fill="url(#gradGrey)"/>
+    <circle cx="0" cy="-50" r="20" fill="none" stroke="url(#gradGrey)" stroke-width="8"/>
+    <path d="M-10 -70 L10 -70" stroke="url(#gradGrey)" stroke-width="8"/>
+  </g>
+
+  <text x="250" y="210" font-family="Arial, sans-serif" font-weight="900" font-size="36" 
+        fill="url(#gradRed)" stroke="#fff" stroke-width="1" text-anchor="middle" letter-spacing="1">
+    EDUARDO GARAGE
+  </text>
+
+  <text x="250" y="240" font-family="Arial, sans-serif" font-weight="bold" font-size="16" 
+        fill="#ccc" text-anchor="middle" letter-spacing="2">
+    ESTÉTICA AUTOMOTIVA
+  </text>
+  
+  <polygon points="400,100 405,115 420,115 408,125 412,140 400,130 388,140 392,125 380,115 395,115" fill="#fff" opacity="0.8"/>
+  <polygon points="100,200 103,210 113,210 105,216 108,226 100,220 92,226 95,216 87,210 97,210" fill="#fff" opacity="0.6"/>
+
+</svg>
