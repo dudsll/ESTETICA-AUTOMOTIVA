@@ -8,7 +8,7 @@ body{
     color: white;
 }
 
-.header {
+.texto-superior{
     margin: 0;
     text-align: center;
     border-radius: 20px;
@@ -194,16 +194,28 @@ button:hover{
 
 /* Esconde o menu por padrão */
 .hidden {
-  display: none;
-  trasnsition: display 0.5s ease-in-out;
+    display: none;
+    transition: display 0.5s ease-in-out;
 }
 
 /* Estilo do menu quando ativo */
 #menu.active {
-  display: block;
-  position: absolute;
-  top: 60px;
-  left: 0;
-  width: 100%;
-  background-color: #333;
+    text-align: left;
+    list-style: none;
+    border-radius: 20px;
+    display: block;
+    position: absolute;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+.menu-container {
+    text-align: left;;
+    width: 30px;
+    padding: 20px;
+}
+
+#menu-button {
+    background-color: red
 }
