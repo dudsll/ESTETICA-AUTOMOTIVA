@@ -204,31 +204,59 @@ button:hover{
 }
 
 #menu {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
     position: fixed;
     top: 0;
     left: 0;
     width: 250px;
     height: 100vh;
-    background-color: rgba(255, 255, 255, 0.75);
+    background-color: rgba(255, 255, 255, 0.5);
     padding: 20px;
     border-radius: 0px 20px 20px 0px;
     z-index: 100;
 
-    transform: translateX(-100%); /* começa escondido */
-    transition: transform 0.3s ease-in-out;
+    transform: translateX(-100%);
+    transition: transform 0.6s cubic-bezier(.77,0,.18,1);
 }
 
 #menu.ativo {
   transform: translateX(0);
 }
 
-#menu ul a{
+#menu ul {
     list-style: none;
     text-decoration: none;
     font-style: normal;
     color: black;
     position: relative;
-    top: 100px;
+    margin-top: 120px;
     padding: 30px;
 }
 
+#menu ul li {
+    margin-bottom: 20px;
+}
+
+#menu ul li a {
+    display: block;
+    text-decoration: none;
+    font-style: normal;
+    color: black;
+    font-weight: bold;
+    padding: 15px;
+    border: 1px solid rgb(164, 7, 7);
+    border-radius: 10px;
+    transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+#menu ul li a:hover {
+    color: white;
+    background-color: rgb(141, 26, 26);
+    transform: translateX(5px);
+}
+
+body .menu.ativo {
+    overflow: hidden;
+}
