@@ -13,6 +13,11 @@ header{
     text-align: center;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 .logo{
@@ -156,9 +161,9 @@ button:hover{
     overflow: hidden;
     position: relative;
     width: 100vw;
-    height: 60vh;
+    height: 100vh;
     min-height: 300px;
-    max-height: 500px;
+    max-height: 100vh;
 }
 
 .botoes-carrossel{
@@ -253,7 +258,7 @@ button:hover{
 #menu ul li a:hover {
     color: white;
     background-color: rgb(141, 26, 26);
-    transform: translateX(5px);
+    transform: translateX(20px);
 }
 
 body.no-scroll {
