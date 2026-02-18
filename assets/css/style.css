@@ -18,7 +18,7 @@ body{
 }
 
 header {
-        margin: 0;
+    margin: 0;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 20px;
@@ -41,7 +41,6 @@ header {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    /* background: linear-gradient(135deg, #e0e0e0 0%, #cfcfcf 50%, #a0a0a0 100%); */
 }
 
 .logo img{
