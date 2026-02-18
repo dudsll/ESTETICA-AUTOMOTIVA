@@ -5,15 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eduardo Garage</title>
+    <link rel="stylesheet" href="../assets/css/reset.css">
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 
 <body>
     <header class="header">
-        <h1>Eduardo Garage Estética Automotiva</h1>
-        <h2>Contate-nos!</h2>
-        <button class="button" onclick="window.location.href='../index.html'">Voltar para a página inicial</button>
-    </header>
+        <div class="menu-container">
+            <button id="menu-button">&#9776;</button>
+        </div>
+            <nav id="menu" class="menu">
+                <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../paginas/sobre.html">Sobre</a></li>
+                <li><a href="../paginas/portfolio.html">Portfolio</a></li>
+                <li><a href="../paginas/contate-nos.html">Contato</a></li>
+                </ul>
+            </nav>
+        <div id="overlay"></div>
+        <div>
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../assets/imgs/eduardo_garage_logo.svg" alt="Eduardo Garage Logo">
+                </a>
+            </div>
+        </div>
+    </header>    
     <main>
         <section>
             <fieldset class="formulario-contato">
@@ -37,4 +54,8 @@
             </fieldset>
         </section>
     </main>
+    <footer class="footer">
+        <p>&copy; 2025 Eduardo Garage Estética Automotiva. Todos os direitos reservados.</p>
+    </footer>
+    <script src="assets/js/main.js"></script>
 </body>
