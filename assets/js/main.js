@@ -23,11 +23,9 @@ ant.addEventListener('click', () => changeSlide(-1));
 
 setInterval(() => changeSlide(1), 5000);
 
-const menuButton = document.getElementById("menu-button");
 const menu = document.getElementById("menu");
+const botao = document.getElementById("menu-button");
 
-menuButton.addEventListener("click", function() {
-  // Alterna a classe 'active' e 'hidden'
-  menu.classList.toggle("active");
-  menu.classList.toggle("hidden");
+botao.addEventListener("click", () => {
+  menu.classList.toggle("ativo");
 });
