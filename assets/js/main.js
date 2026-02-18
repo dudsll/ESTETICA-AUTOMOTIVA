@@ -1,5 +1,5 @@
 const imagem = document.getElementById("imagemPrincipal");
-const botoes = document.querySelectorAll("button");
+const botoes = document.querySelectorAll("button.buttonC");
 
 botoes.forEach(botao => {
   botao.addEventListener("click", () => {
@@ -32,4 +32,4 @@ botao.addEventListener("click", () => {
   menu.classList.toggle("ativo");
   body.classList.toggle("no-scroll");
   overlay.classList.toggle("active");
-}); //
+}); 
