@@ -60,16 +60,39 @@ header {
     padding: 20px;
 }
 
+.form-container{
+    border: 5px;
+    padding: 5px;
+}
+
 form{
     text-align: left;
     margin: 20px;
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.5);
-    border: 1px solid;
-    border-color: red;
+    /* border: 1px solid; */
+    /* border-color: red; */
+    border-radius: 20px;
+}
+form input, form textarea {
     border-radius: 20px;
 }
 
+.button-form{
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    width: 300px;
+    height: 50px;
+    transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.button-form:hover {
+    color: white;
+    background-color: rgb(141, 26, 26);
+}
 
 .servicos1 {
     padding: 5px;
@@ -118,13 +141,14 @@ form{
     aspect-ratio: 16 / 9;
     /* transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s; */
 }
-     
+
 /* .imagem-servico:hover{
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s;
 } */
 
 fieldset{
     border: 1px solid;
+    padding: 5px;
     border-color: red;
     border-radius: 20px;
     padding: 10px;
