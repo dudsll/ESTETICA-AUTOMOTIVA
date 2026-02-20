@@ -74,6 +74,7 @@ form{
     /* border-color: red; */
     border-radius: 20px;
 }
+
 form input, form textarea {
     border-radius: 20px;
 }
