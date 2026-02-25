@@ -1,5 +1,3 @@
-<<<<<<< Updated upstream
-=======
 export function initServicos() {
   const imagem = document.getElementById("imagemPrincipal");
   const botoes = document.querySelectorAll("button.buttonC");
@@ -10,4 +8,3 @@ export function initServicos() {
     });
   }); 
 }
->>>>>>> Stashed changes
