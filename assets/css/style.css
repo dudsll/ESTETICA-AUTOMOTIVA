@@ -192,25 +192,22 @@ fieldset{
     transform: translateX(20px);
 }
 
-/* .portfolio{
-    text-align: left;
-    margin: 5px;
-    padding: 20px;
-    border: 1px solid red;
-    border-radius: 20px;
-    background-color: rgba(0, 0, 0, 0.5);
-} */
+.portfolio{
+    gap: 30px;
+    padding: 5px;
+}
 
 .portfolio-container{
-    margin: 5px;
-    padding: 20px;
+    margin: 0 auto auto;
+    padding: 5px;
     border-radius: 20px;
-    max-width: 1200px;
+    width: 100%;
     /* display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    gap: 30px; */
+    justify-content: space-between; */
+    gap: 30px;
     align-items: center;
+    object-fit: border-box;
 }
 
 /* .portfolio-item{
