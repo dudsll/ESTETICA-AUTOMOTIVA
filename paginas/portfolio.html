@@ -7,7 +7,7 @@
     <title>Eduardo Garage - Estética Automotiva</title>
     <link rel="stylesheet" href="../assets/css/reset.css">
     <link rel="stylesheet" href="../assets/css/style.css">
-    <link <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
@@ -56,13 +56,14 @@
             </fieldset>
         </div>
         <section class="portfolio">
-        <div>
+        <div class="portfolio-header">
             <h2>Nosso portfólio</h2>
         </div>
-        <div>
+            <div id="react-root"></div>
+        <div class="portfolio-description">
             <p>Aqui estão alguns exemplos do nosso trabalho:</p>
         </div>
-        <div>
+        <div class="portfolio-item">
             <img title="Chevrolet Corsa" src="../assets/imgs/imagem1.jpg" width="400" height="auto" border-radius="20px" /> 
             <p><i>Chevrolet Corsa</i> - Serviço de lavagem completa</p>
         </div>
@@ -72,6 +73,20 @@
         <p>&copy; 2025 Eduardo Garage Estética Automotiva. Todos os direitos reservados.</p>
     </footer>
     <script type="module" src="../assets/js/main.js"></script>
+    <script src="../assets/js/main.js" defer></script>
+    <script type="module" src="../assets/js/main.js"></script>
+    <!-- React -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+
+    <!-- React DOM -->
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <!-- Babel -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!-- Seu arquivo React -->
+    <script type="text/babel" src="../assets/js/react-app.js"></script>
+
 </body>
 
 </html>
