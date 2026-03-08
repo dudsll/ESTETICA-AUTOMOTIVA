@@ -38,7 +38,7 @@
                 <fieldset class="formulario-contato">
                     <legend>Entre em contato e agende o spa do seu carro!</legend>
                     <div class="form">
-                        <form name="formulario-de-cadastro" onsubmit="alert('Sua nave agradece');" autocomplete="off"
+                        <form id="contact-form" name="formulario-de-cadastro" autocomplete="off"
                             target="_blank" method="post" action="#">
                             <label>Nome:</label> <input type="text" name="name" /><br><br>
                             <label>Email:</label> <input type="email" name="email" /><br><br>
@@ -61,6 +61,8 @@
         <p>&copy; 2025 Eduardo Garage Estética Automotiva. Todos os direitos reservados.</p>
     </footer>
     <script src="../assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="../assets/js/formulario.js"></script>
 </body>
 
 
