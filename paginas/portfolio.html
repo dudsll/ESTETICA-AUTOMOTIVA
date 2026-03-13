@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eduardo Garage - Estética Automotiva</title>
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+          <div class="menu-container">
+            <button id="menu-button">&#9776;</button>
+          </div>
+            <nav id="menu" class="menu">
+                <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../paginas/portfolio.html">Portfolio</a></li>
+                <li><a href="../paginas/contate-nos.html">Contato</a></li>
+                </ul>
+            </nav>
+        <div id="overlay"></div>
+        <div>
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../assets/imgs/eduardo_garage_logo.svg" alt="Eduardo Garage Logo">
+                </a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="servicos1">
+            <fieldset class="titulo-servicos"><legend>Nossos serviços</legend>
+            <div class="servicos2">
+                <div class="lista-servicos">
+                        <ul>
+                            <li><button class="buttonC" data-img="/assets/imgs/imagem1.jpg">Lavagem Completa</button></li>
+                            <li><button class="buttonC" data-img="/assets/imgs/imagem2.jpg">Polimento e Cristalização</button></li>
+                            <li><button class="buttonC"data-img="/assets/imgs/imagem3.jpg">Higienização Interna</button></li>
+                            <li><button class="buttonC" data-img="/assets/imgs/imagem4.jpg">Polimento Técnico</button></li>
+                            <li><button class="buttonC" data-img="/assets/imgs/imagem5.jpg">Vitrificação de Pintura</button></li>
+                            <li><button class="buttonC" data-img="/assets/imgs/imagem6.jpg">Revitalização de Faróis</button></li>
+                            <li><button class="buttonC" data-img="/assets/imgs/imagem7.jpg">Proteção Cerâmica</button></li>
+                        </ul>
+                </div>
+                <div class="container-imagem">
+                        <img id="imagemPrincipal" class="imagem-servico" src="../assets/imgs/eduardo_garage_logo.png" alt="Imagem de serviço de estética automotiva">
+                </div>
+            </div>
+            </fieldset>
+        </div>
+        <section>
+            <div class="portfolio">
+                <fieldset class="portfolio-container">
+                    <legend>Nosso portfólio</legend>
+                <div id="react-root"></div>
+                <div class="portfolio-lista">
+                    <div class="portfolio-item">
+                        <img title="Chevrolet Corsa" src="../assets/imgs/imagem1.jpg" width="400" height="auto" border-radius="20px"/>
+                        <div class="portfolio-item">
+                            <p><i>Chevrolet Corsa</i> - Serviço de Lavagem Completa</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img title="Ford Ka" src="../assets/imgs/ford-ka.jpg" width="400" height="auto" border-radius="20px"/>
+                        <div class="portfolio-item">
+                            <p><i>Ford Ka</i> - Serviço de Lavagem com Cera<br> e Revitalização de Plásticos</p>
+                        </div>
+                    </div>
+                </div>
+                </fieldset>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2025 Eduardo Garage Estética Automotiva. Todos os direitos reservados.</p>
+    </footer>
+    <script type="module" src="../assets/js/main.js"></script>
+</body>
+
+</html>
