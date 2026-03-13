@@ -22,16 +22,12 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-<<<<<<< HEAD
 	box-sizing: border-box;
-=======
->>>>>>> 9410e3dd3e56079cf4c7b32696789127d0c8859f
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
-<<<<<<< HEAD
 	box-sizing: border-box;
 }
 body {
@@ -45,17 +41,6 @@ ol, ul {
 blockquote, q {
 	quotes: none;
 	box-sizing: border-box;
-=======
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
->>>>>>> 9410e3dd3e56079cf4c7b32696789127d0c8859f
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
@@ -65,8 +50,5 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
-<<<<<<< HEAD
 	box-sizing: border-box;
-=======
->>>>>>> 9410e3dd3e56079cf4c7b32696789127d0c8859f
 }

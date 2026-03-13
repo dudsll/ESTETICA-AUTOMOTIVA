@@ -79,10 +79,6 @@ form input, form textarea {
     border-radius: 20px;
 }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 9410e3dd3e56079cf4c7b32696789127d0c8859f
 .button-form{
     background-color: white;
     color: black;
@@ -262,18 +258,8 @@ fieldset{
 
 .carrossel{
     width: 100%;
-<<<<<<< HEAD
     overflow: hidden;
     position: relative;
-=======
-    height: 400px;
-    overflow: hidden;
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    min-height: 300px;
-    max-height: 100vh;
->>>>>>> 9410e3dd3e56079cf4c7b32696789127d0c8859f
 }
 
 .botoes-carrossel{
@@ -289,27 +275,16 @@ fieldset{
 }
 
 .slides img{
-<<<<<<< HEAD
     width: 100%;
     height: auto;
     display: none;
-=======
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
->>>>>>> 9410e3dd3e56079cf4c7b32696789127d0c8859f
 
     opacity: 0;
     transition: opacity 0.8s ease-in-out;
 }
 
 .slides img.active{
-<<<<<<< HEAD
     display: block;
-=======
->>>>>>> 9410e3dd3e56079cf4c7b32696789127d0c8859f
     opacity: 1;
 }
 
@@ -398,7 +373,6 @@ body.no-scroll {
 #overlay.active {
   opacity: 1;
   visibility: visible;
-<<<<<<< HEAD
 }
 
 /* mobile */
@@ -444,6 +418,4 @@ body.no-scroll {
         justify-content: space-between;
         gap: 30px;
     }
-=======
->>>>>>> 9410e3dd3e56079cf4c7b32696789127d0c8859f
 }
