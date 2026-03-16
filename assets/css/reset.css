@@ -22,20 +22,25 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	box-sizing: border-box;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
+	box-sizing: border-box;
 }
 body {
 	line-height: 1;
+	box-sizing: border-box;
 }
 ol, ul {
 	list-style: none;
+	box-sizing: border-box;
 }
 blockquote, q {
 	quotes: none;
+	box-sizing: border-box;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
@@ -45,4 +50,5 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+	box-sizing: border-box;
 }

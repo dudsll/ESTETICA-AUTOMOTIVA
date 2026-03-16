@@ -18,7 +18,6 @@
             <nav id="menu" class="menu">
                 <ul>
                 <li><a href="../index.html">Home</a></li>
-                <li><a href="../paginas/sobre.html">Sobre</a></li>
                 <li><a href="../paginas/portfolio.html">Portfolio</a></li>
                 <li><a href="../paginas/contate-nos.html">Contato</a></li>
                 </ul>
@@ -40,17 +39,19 @@
                     <div class="form">
                         <form id="contact-form" name="formulario-de-cadastro" autocomplete="off"
                             target="_blank" method="post" action="#">
-                            <label>Nome:</label> <input type="text" name="name" /><br><br>
-                            <label>Email:</label> <input type="email" name="email" /><br><br>
-                            <label>Marca e modelo do veículo:</label> <input type="text" name="vehicle_model" /><br><br>
+                            <label>Nome:</label> <input type="text" name="name" required/><br><br>
+                            <label>Email:</label> <input type="email" name="email" required/><br><br>
+                            <label>Marca e modelo do veículo:</label> <input type="text" name="vehicle_model" required/><br><br>
                             <label>Ano do veículo:</label> <input type="number" min="1950" max="2027"
-                                name="vehicle_year" /><br><br>
-                            <label>Cor do veículo: </label><input type="color" name="vehicle_color" /><br><br>
+                                name="vehicle_year" required/><br><br>
+                            <label>Cor do veículo: </label><input type="color" name="vehicle_color" required/><br><br>
                             <label>O que está ofuscando a beleza do seu carro?</label>
-                            <textarea type="text" name="message"></textarea> <br><br>
-                            <label>Melhor data de agendamento: </label> <input type="date" name="appointment_date" /><br><br>
-                            <button class="button-form"type="reset">Limpar</button>
-                            <button class="button-form"type="submit">Pronto!</button>
+                            <textarea type="text" name="message" required></textarea> <br><br>
+                            <label>Melhor data de agendamento: </label> <input type="date" name="appointment_date" required/><br><br>
+                            <div class="botoes-form-container">
+                                <button class="button-form"type="reset">Limpar</button>
+                                <button class="button-form"type="submit">Pronto!</button>
+                            </div>
                         </form>
                     </div>
                 </fieldset>
