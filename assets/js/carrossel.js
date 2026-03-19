@@ -2,6 +2,11 @@ export function initCarrossel() {
   const imgs = document.querySelectorAll('.slides img');
   const prox = document.querySelector('#prox');
   const ant = document.querySelector('#ant');
+
+  if (imgs.length === 0 || !prox || !ant) {
+    return;
+  }
+
   let i = 0;
 
   function changeSlide(n) {
