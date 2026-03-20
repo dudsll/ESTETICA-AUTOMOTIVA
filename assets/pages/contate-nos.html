@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eduardo Garage - Estética Automotiva</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<body>
+    <header class="header">
+        <div class="menu-container">
+            <button id="menu-button">&#9776;</button>
+        </div>
+            <nav id="menu" class="menu">
+                <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contate-nos.html">Contato</a></li>
+                </ul>
+            </nav>
+        <div id="overlay"></div>
+        <div>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/imgs/eduardo_garage_logo.svg" alt="Eduardo Garage Logo">
+                </a>
+            </div>
+        </div>
+    </header> 
+    <main>
+        <section>
+            <div class="form-container">
+                <fieldset class="formulario-contato">
+                    <legend>Entre em contato e agende o spa do seu carro!</legend>
+                    <div class="form">
+                        <form id="contact-form" name="formulario-de-cadastro" autocomplete="off"
+                            target="_blank" method="post" action="#">
+                            <label>Nome:</label> <input type="text" name="name" required/><br><br>
+                            <label>Email:</label> <input type="email" name="email" required/><br><br>
+                            <label>Marca e modelo do veículo:</label> <input type="text" name="vehicle_model" required/><br><br>
+                            <label>Ano do veículo:</label> <input type="number" min="1950" max="2027"
+                                name="vehicle_year" required/><br><br>
+                            <label>Cor do veículo: </label><input type="color" name="vehicle_color" required/><br><br>
+                            <label>O que está ofuscando a beleza do seu carro?</label>
+                            <textarea type="text" name="message" required></textarea> <br><br>
+                            <label>Melhor data de agendamento: </label> <input type="date" name="appointment_date" required/><br><br>
+                            <div class="botoes-form-container">
+                                <button class="button-form"type="reset">Limpar</button>
+                                <button class="button-form"type="submit">Pronto!</button>
+                            </div>
+                        </form>
+                    </div>
+                </fieldset>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2025 Eduardo Garage Estética Automotiva. Todos os direitos reservados.</p>
+    </footer>
+    <script src="assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="assets/js/formulario.js"></script>
+</body>
+
+
+    <script type="module" src="assets/js/main.js"></script>
+</body>
