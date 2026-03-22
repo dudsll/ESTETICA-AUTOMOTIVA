@@ -1,4 +1,4 @@
-function Header() {
+function HeaderPrincipal() {
     return (
         <header id="headerPrincipal">
             <div className="menu-container">
@@ -23,4 +23,4 @@ function Header() {
     );
 }
 
-export default Header;
+export default HeaderPrincipal;
