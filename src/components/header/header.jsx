@@ -1,27 +1,21 @@
-// FIXME: This code was only a demo to show the header component
-import "./header.css";
-
-function Header(isHome = false) {
-    const pages = ["Home", "Portfolio", "Contato"];
-    const logo = "assets/imgs/eduardo_garage_logo.svg";
-    
+function Header() {
   return (
-        <header className={isHome ? "header home-header" : "header"}>
+        <header className="header">
              <div className="menu-container">
                 <button id="menu-button">&#9776;</button>
             </div>
                 <nav id="menu" className="menu">
                     <ul>
-                        {pages.map((page, index) => (
-                            <li key={index}><a href={page.toLowerCase()}>{page}</a></li>
-                        ))}
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contate-nos.html">Contato</a></li>
                     </ul>
                 </nav>
             <div id="overlay"></div>
             <div>
                 <div className="logo">
                     <a href="index.html">
-                        <img src={logo} alt="Eduardo Garage Logo" />
+                        <img src="assets/imgs/eduardo_garage_logo.svg"  alt="Eduardo Garage Logo" />
                     </a>
                 </div>
             </div>
