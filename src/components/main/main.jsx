@@ -1,3 +1,10 @@
+import "./main.css";
+import logo from "../../assets/eduardo_garage_logo.png";
+import up from "../../assets/up.png";
+import cliotuned from "../../assets/cliotuned.png";
+import renegadetuned from "../../assets/renegadetuned.png";
+import mecatuned from "../../assets/mecatuned.png";
+
 function Main() {
     return (
         <main>
@@ -5,11 +12,11 @@ function Main() {
                 <div className="conteudo">
                     <div className="carrossel">
                         <div className="slides">
-                            <img className="active" src="assets/imgs/eduardo_garage_logo.png" alt="Eduardo Garage logo featuring automotive styling branding" />
-                            <img src="assets/imgs/carrossel/up.png" alt="Modified UP vehicle showcasing automotive customization work" />
-                            <img src="assets/imgs/carrossel/cliotuned.png" alt="Tuned Clio car displaying performance enhancements and custom styling" />
-                            <img src="assets/imgs/carrossel/renegadetuned.png" alt="Customized Renegade vehicle with aesthetic and performance upgrades" />
-                            <img src="assets/imgs/carrossel/mecatuned.png" alt="Mechanized tuned vehicle emphasizing engine and mechanical modifications" />
+                            <img className="active" src={logo} alt="Eduardo Garage logo featuring automotive styling branding" />
+                            <img src={up} alt="Modified UP vehicle showcasing automotive customization work" />
+                            <img src={cliotuned} alt="Tuned Clio car displaying performance enhancements and custom styling" />
+                            <img src={renegadetuned} alt="Customized Renegade vehicle with aesthetic and performance upgrades" />
+                            <img src={mecatuned} alt="Mechanized tuned vehicle emphasizing engine and mechanical modifications" />
                         </div>      
                     </div>
                 </div>

@@ -1,16 +1,15 @@
-import Button from "../components/button/button";
-import Header from "../components/header/header";
+// import Header from "../components/header/header.jsx";
+// import Main from "../components/main/main.jsx";
+// import Footer from "../components/footer/footer.jsx";
 
-export default function Home() {
-    const onContactClick = () => {
-        navigate("/contato");
-    };
+// function Home() {
+//     return (
+//         <>
+//             <Header />
+//             <Main />
+//             <Footer />
+//         </>
+//     );
+// }
 
-    return (
-        <div>
-            {/* FIXME: This code was only a demo to show the button component */}
-            <Header isHome={true} />
-            <Button label="Contato" onClick={onContactClick} />
-        </div>
-    );
-}
+// export default Home;
