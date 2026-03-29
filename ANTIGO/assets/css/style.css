@@ -1,70 +1,49 @@
-body{
-    margin: 0;
-    padding: 0;
-    background-image: url("../imgs/background.jpg");
-    /* background-color: black; */
-    font-family: "Roboto", sans-serif;
-    font-style: italic;
-    color: white;
-}
-
-.roboto-body {
-    font-family: "Roboto", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-variation-settings:
-    "wdth" 100;
-}
-
-
-
 /* mobile */
 @media screen and (max-width: 768px) {
-    .servicos2 {
-        flex-direction: column;
-    }
+  .servicos2 {
+    flex-direction: column;
+  }
 
-    .container-imagem {
-        width: 100%;
-        max-width: none;
-        height: auto;
-    }
+  .container-imagem {
+    width: 100%;
+    max-width: none;
+    height: auto;
+  }
 
-    .imagem-servico {
-        width: 100%;
-        height: auto;
-    }
+  .imagem-servico {
+    width: 100%;
+    height: auto;
+  }
 
-    .botoes-form-container {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
+  .botoes-form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
 
-    .button, .buttonC{
-        width: 100%;
-    }
+  .button,
+  .buttonC {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 1024px) {
+  #headerPrincipal {
+    position: relative !important;
+  }
 
-    #headerPrincipal {
-        position: relative !important;
-    }
+  .slides img {
+    object-fit: cover;
+  }
 
-    .slides img {
-        object-fit: cover;
-    }
+  .portfolio-lista {
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+  }
 
-    .portfolio-lista {
-        flex-direction: column;
-        justify-content: space-between;
-        gap: 30px;
-    }
-
-    .portfolio-item img {
-        width: 100%;
-        height: auto;
-    }
+  .portfolio-item img {
+    width: 100%;
+    height: auto;
+  }
 }
