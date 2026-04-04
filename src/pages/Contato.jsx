@@ -1,9 +1,7 @@
-// import Header from "../components/header/header.jsx";
+import Form from "../components/form/form.jsx";
 
-// export default function Contato() {
-//     return (
-//         <div>
-//             <Header />
-//         </div>
-//     );
-// }
+function Contato() {
+  return <Form />;
+}
+
+export default Contato;

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 import "./menu.css";
 
 function Menu() {
@@ -24,19 +25,19 @@ function Menu() {
       <nav id="menu" className={isOpen ? "menu ativo" : "menu"}>
         <ul>
           <li>
-            <a href="index.html" onClick={closeMenu}>
+            <NavLink to="/" onClick={closeMenu}>
               Home
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a href="portfolio.html" onClick={closeMenu}>
+            <NavLink to="/portfolio" onClick={closeMenu}>
               Portfolio
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a href="contate-nos.html" onClick={closeMenu}>
+            <NavLink to="/contato" onClick={closeMenu}>
               Contato
-            </a>
+            </NavLink>
           </li>
         </ul>
       </nav>

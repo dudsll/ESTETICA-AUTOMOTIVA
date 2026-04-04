@@ -1,15 +1,7 @@
-// import Header from "../components/header/header.jsx";
-// import Main from "../components/main/main.jsx";
-// import Footer from "../components/footer/footer.jsx";
+import Main from "../components/main/main.jsx";
 
-// function Home() {
-//     return (
-//         <>
-//             <Header />
-//             <Main />
-//             <Footer />
-//         </>
-//     );
-// }
+function Home() {
+  return <Main />;
+}
 
-// export default Home;
+export default Home;

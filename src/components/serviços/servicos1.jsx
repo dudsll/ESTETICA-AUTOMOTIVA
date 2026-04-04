@@ -1,4 +1,23 @@
+import { useState } from "react";
+
+const servicos = [
+  { label: "Lavagem Completa", img: "assets/imgs/imagem8.jpg" },
+  { label: "Polimento e Cristalização", img: "assets/imgs/imagem2.jpg" },
+  {
+    label: "Higienização Interna",
+    img: "assets/imgs/WhatsApp Image 2026-03-19 at 08.39.11.jpeg",
+  },
+  { label: "Polimento Técnico", img: "assets/imgs/clio2.jpeg" },
+  { label: "Vitrificação de Pintura", img: "assets/imgs/imagem6.jpg" },
+  { label: "Revitalização de Faróis", img: "assets/imgs/imagem5.jpg" },
+  { label: "Proteção Cerâmica", img: "assets/imgs/imagem7.jpg" },
+];
+
 function Servicos1() {
+  const [imagemAtual, setImagemAtual] = useState(
+    "assets/imgs/eduardo_garage_logo.png",
+  );
+
   return (
     <div className="servicos1">
       <fieldset className="titulo-servicos">
@@ -6,51 +25,23 @@ function Servicos1() {
         <div className="servicos2">
           <div className="lista-servicos">
             <ul>
-              <li>
-                <button className="buttonC" data-img="assets/imgs/imagem8.jpg">
-                  Lavagem Completa
-                </button>
-              </li>
-              <li>
-                <button className="buttonC" data-img="assets/imgs/imagem2.jpg">
-                  Polimento e Cristalização
-                </button>
-              </li>
-              <li>
-                <button
-                  className="buttonC"
-                  data-img="assets/imgs/WhatsApp Image 2026-03-19 at 08.39.11.jpeg"
-                >
-                  Higienização Interna
-                </button>
-              </li>
-              <li>
-                <button className="buttonC" data-img="assets/imgs/clio2.jpeg">
-                  Polimento Técnico
-                </button>
-              </li>
-              <li>
-                <button className="buttonC" data-img="assets/imgs/imagem6.jpg">
-                  Vitrificação de Pintura
-                </button>
-              </li>
-              <li>
-                <button className="buttonC" data-img="assets/imgs/imagem5.jpg">
-                  Revitalização de Faróis
-                </button>
-              </li>
-              <li>
-                <button className="buttonC" data-img="assets/imgs/imagem7.jpg">
-                  Proteção Cerâmica
-                </button>
-              </li>
+              {servicos.map((servico) => (
+                <li key={servico.label}>
+                  <button
+                    className="buttonC"
+                    onClick={() => setImagemAtual(servico.img)}
+                  >
+                    {servico.label}
+                  </button>
+                </li>
+              ))}
             </ul>
           </div>
           <div className="container-imagem">
             <img
               id="imagemPrincipal"
               className="imagem-servico"
-              src="assets/imgs/eduardo_garage_logo.png"
+              src={imagemAtual}
               alt="Imagem de serviço de estética automotiva"
             />
           </div>
@@ -59,31 +50,5 @@ function Servicos1() {
     </div>
   );
 }
-
-const imagem = document.getElementById("imagemPrincipal");
-const botoes = document.querySelectorAll("button.buttonC");
-
-if (!imagem || botoes.length === 0) {
-  return;
-}
-
-function resolveAssetPath(rawPath) {
-  if (!rawPath) return "";
-
-  // Corrige caminhos herdados como "../assets/..." em páginas publicadas no GitHub Pages.
-  const normalizedPath = rawPath.replace(/^\.\.\//, "");
-
-  try {
-    return new URL(normalizedPath, window.location.href).toString();
-  } catch {
-    return normalizedPath;
-  }
-}
-
-botoes.forEach((botao) => {
-  botao.addEventListener("click", () => {
-    imagem.src = resolveAssetPath(botao.dataset.img);
-  });
-});
 
 export default Servicos1;

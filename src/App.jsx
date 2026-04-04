@@ -1,18 +1,25 @@
 import "./App.css";
-import Header from "../src/components/header/header.jsx";
-import Main from "../src/components/main/main.jsx";
+import { Route, Routes } from "react-router-dom";
+import HeaderPrincipal from "../src/components/header/headerPrincipal.jsx";
 import Footer from "../src/components/footer/footer.jsx";
 import Menu from "../src/components/menu/menu.jsx";
+import Contato from "./pages/Contato.jsx";
+import Home from "./pages/Home.jsx";
+import { Portfolio } from "./pages/Portfolio.jsx";
 
-function Home() {
+function App() {
   return (
     <>
-      <Header />
+      <HeaderPrincipal />
       <Menu />
-      <Main />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/contato" element={<Contato />} />
+      </Routes>
       <Footer />
     </>
   );
 }
 
-export default Home;
+export default App;
