@@ -1,22 +1,29 @@
 import { useState } from "react";
+import "./servicos1.css";
+import imagem8 from "../../assets/imagem8.jpg";
+import imagem2 from "../../assets/imagem2.jpg";
+import higienizacaoInterna from "../../assets/WhatsApp Image 2026-03-19 at 08.39.11.jpeg";
+import clio2 from "../../assets/clio2.jpeg";
+import imagem6 from "../../assets/imagem6.jpg";
+import imagem5 from "../../assets/imagem5.jpg";
+import imagem7 from "../../assets/imagem7.jpg";
+import logo from "../../assets/eduardo_garage_logo.png";
 
 const servicos = [
-  { label: "Lavagem Completa", img: "assets/imgs/imagem8.jpg" },
-  { label: "Polimento e Cristalização", img: "assets/imgs/imagem2.jpg" },
+  { label: "Lavagem Completa", img: imagem8 },
+  { label: "Polimento e Cristalização", img: imagem2 },
   {
     label: "Higienização Interna",
-    img: "assets/imgs/WhatsApp Image 2026-03-19 at 08.39.11.jpeg",
+    img: higienizacaoInterna,
   },
-  { label: "Polimento Técnico", img: "assets/imgs/clio2.jpeg" },
-  { label: "Vitrificação de Pintura", img: "assets/imgs/imagem6.jpg" },
-  { label: "Revitalização de Faróis", img: "assets/imgs/imagem5.jpg" },
-  { label: "Proteção Cerâmica", img: "assets/imgs/imagem7.jpg" },
+  { label: "Polimento Técnico", img: clio2 },
+  { label: "Vitrificação de Pintura", img: imagem6 },
+  { label: "Revitalização de Faróis", img: imagem5 },
+  { label: "Proteção Cerâmica", img: imagem7 },
 ];
 
 function Servicos1() {
-  const [imagemAtual, setImagemAtual] = useState(
-    "assets/imgs/eduardo_garage_logo.png",
-  );
+  const [imagemAtual, setImagemAtual] = useState(logo);
 
   return (
     <div className="servicos1">

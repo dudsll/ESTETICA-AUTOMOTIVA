@@ -6,6 +6,8 @@ import renegadetuned from "../../assets/renegadetuned.png";
 import up from "../../assets/up.png";
 import "./carrossel.css";
 
+let autoPlayStarted = false;
+
 function Carrossel() {
   // TODO: Study React Hooks
   const [getIndex, setIndex] = useState(0);
@@ -31,6 +33,15 @@ function Carrossel() {
       alt: "Mechanized tuned vehicle emphasizing engine and mechanical modifications",
     },
   ];
+  const normalizedIndex =
+    ((getIndex % images.length) + images.length) % images.length;
+
+  if (!autoPlayStarted) {
+    autoPlayStarted = true;
+    setInterval(() => {
+      setIndex((currentIndex) => currentIndex + 1);
+    }, 5000);
+  }
 
   return (
     <>
@@ -42,7 +53,7 @@ function Carrossel() {
                 key={index}
                 src={image.src}
                 alt={image.alt}
-                className={index === getIndex ? "active" : ""}
+                className={index === normalizedIndex ? "active" : ""}
               />
             ))}
           </div>
@@ -66,29 +77,6 @@ function Carrossel() {
       </div>
     </>
   );
-}
-
-function initCarrossel() {
-  const imgs = document.querySelectorAll(".slides img");
-  const prox = document.querySelector("#prox");
-  const ant = document.querySelector("#ant");
-
-  if (imgs.length === 0 || !prox || !ant) {
-    return;
-  }
-
-  let i = 0;
-
-  function changeSlide(n) {
-    imgs[i].classList.remove("active");
-    i = (i + n + imgs.length) % imgs.length;
-    imgs[i].classList.add("active");
-  }
-
-  prox.addEventListener("click", () => changeSlide(1));
-  ant.addEventListener("click", () => changeSlide(-1));
-
-  setInterval(() => changeSlide(1), 5000);
 }
 
 export default Carrossel;
