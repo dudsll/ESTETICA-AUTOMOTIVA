@@ -1,0 +1,20 @@
+fieldset {
+  border: 1px solid;
+  padding: 5px;
+  border-color: red;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.local {
+  margin: 20px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  width: auto;
+}
+
+.mapa {
+  border-radius: 20px;
+  width: 100%;
+}

@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "wrangler": "^4.73.0"
+  },
+  "name": "estetica-automotiva",
+  "version": "1.0.0",
+  "description": "Projeto de site institucional para uma estética automotiva fictícia, desenvolvido com foco em **aprendizado prático de desenvolvimento front-end**, organização de projeto e boas práticas de TI.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Eduardo Lopes",
+  "license": "MIT",
+    "devDependencies": {
+      "@babel/core": "^7.26.0",
+      "@babel/preset-env": "^7.26.0",
+      "@babel/preset-react": "^7.26.0",
+      "@babel/preset-typescript": "^7.26.0",
+      "babel-loader": "^9.2.1",
+      "react": "^18.3.1",
+      "react-dom": "^18.3.1",
+      "react-scripts": "^5.0.1"
+    }
+}

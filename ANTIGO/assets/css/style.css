@@ -1,0 +1,54 @@
+/* mobile */
+@media screen and (max-width: 768px) {
+  .servicos2 {
+    flex-direction: column;
+  }
+
+  .container-imagem {
+    width: 100%;
+    max-width: none;
+    height: auto;
+  }
+
+  .imagem-servico {
+    width: 100%;
+    height: auto;
+  }
+
+  .botoes-form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .button,
+  .buttonC {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #headerPrincipal {
+    position: relative !important;
+  }
+
+  .slides img {
+    object-fit: cover;
+  }
+
+  .portfolio-lista {
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  .portfolio-item img {
+    width: 100%;
+    height: auto;
+  }
+
+  .button,
+  .buttonC {
+    width: 100%;
+  }
+}
