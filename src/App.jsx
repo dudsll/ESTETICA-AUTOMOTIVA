@@ -1,16 +1,20 @@
 import "./App.css";
-import { Route, Routes } from "react-router-dom";
-import HeaderPrincipal from "../src/components/header/headerPrincipal.jsx";
+import { Route, Routes, useLocation } from "react-router-dom";
+import Header from "../src/components/header/headerPrincipal.jsx";
 import Footer from "../src/components/footer/footer.jsx";
 import Menu from "../src/components/menu/menu.jsx";
 import Contato from "./pages/Contato.jsx";
 import Home from "./pages/Home.jsx";
 import { Portfolio } from "./pages/Portfolio.jsx";
+import HeaderPrincipal from "../src/components/header/headerPrincipal.jsx";
 
 function App() {
+  const location = useLocation();
+  const isHome = location.pathname === "/";
+
   return (
     <>
-      <HeaderPrincipal />
+      <Header isHome={isHome} />
       <Menu />
       <Routes>
         <Route path="/" element={<Home />} />

@@ -6,7 +6,12 @@ function Servicos() {
 }
 
 function Portfolio() {
-  return <Portfolio1 />;
+  return (
+    <>
+      <Servicos1 />
+      <Portfolio1 />
+    </>
+  );
 }
 
 export { Portfolio, Servicos };

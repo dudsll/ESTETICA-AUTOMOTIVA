@@ -1,9 +1,9 @@
 import "./header.css";
 import logo from "../../assets/eduardo_garage_logo.svg";
 
-function HeaderPrincipal() {
+function Header({ isHome = false }) {
   return (
-    <header id="headerPrincipal">
+    <header className={isHome ? "header home-header" : "header"}>
       <div className="logo">
         <a href="/">
           <img
@@ -16,4 +16,4 @@ function HeaderPrincipal() {
   );
 }
 
-export default HeaderPrincipal;
+export default Header;
