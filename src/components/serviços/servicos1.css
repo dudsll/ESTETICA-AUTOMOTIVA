@@ -23,7 +23,7 @@
 .lista-servicos,
 ul {
   list-style-type: none;
-  padding: 20px 20px 20px 40px;
+  padding: 20px 20px 20px 20px;
   flex: 1;
 }
 

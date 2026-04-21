@@ -1,5 +1,5 @@
 import "./footer.css";
-import Logo from "/src/assets/logogit.jpeg";
+import Logo from "/src/assets/git.png";
 
 function Footer() {
   return (
